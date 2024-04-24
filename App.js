@@ -24,10 +24,10 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(fileUpload({
-	useTempFiles: true,
-	tempFileDir: "/tmp/",
-}))
+// app.use(fileUpload({
+// 	useTempFiles: true,
+// 	tempFileDir: "/tmp/",
+// }))
 
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/division", divRouter);
